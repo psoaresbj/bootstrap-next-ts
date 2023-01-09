@@ -1,0 +1,5 @@
+{
+  "dest": "theme/components/Icon",
+  "passAllAttributes": true,
+  "src": ".icons"
+}
