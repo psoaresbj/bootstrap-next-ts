@@ -1,17 +1,3 @@
-import { Heading } from '../theme/components/Typography';
-import React from 'react';
-import Section from '../theme/components/Section';
+import Example from '../page-components/Example';
 
-// const listItems = new Array(12).fill().map((_, index) => index);
-
-const index = () => {
-  return (
-    <>
-      <Section>
-        <Heading>NextJS + Typescript + Base theme</Heading>
-      </Section>
-    </>
-  );
-};
-
-export default index;
+export default Example;

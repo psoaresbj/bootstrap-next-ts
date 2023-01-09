@@ -15,12 +15,16 @@
 - [ ] Prismic Base Integration
 
 ### Theme
+- [x] Style-guide page
+  - [x] Typography
+  - [x] Colors
+  - [x] Icons
 - [ ] Modal component
-- [ ] Grid components
-  - [ ] `Grid`
-  - [ ] `Row`
-  - [ ] `Col`
-- [ ] List component
+- [x] Grid components
+  - [x] `Grid`
+  - [x] `Row`
+  - [x] `Col`
+- [x] List component
 - [x] Typography components
 - [x] Icon component
 - [x] Base layout components
@@ -32,4 +36,4 @@
 
 ### Base
 - [x] Eslint + Typescript config
-- [ ] Next base config
+- [x] Next base config

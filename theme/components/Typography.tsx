@@ -1,7 +1,7 @@
 /* eslint-disable no-nested-ternary */
 import { GeneratedProps, VariationProps } from '../types';
 import { Variations, generateProps, variations } from '@psoares/styled-utils';
-import { colors, fonts, typography } from '../variables';
+import { fonts, typography } from '../variables';
 import { getTypographySizeVariations } from '../helpers/getTypographySizeVariations';
 import getTag from '../helpers/getTag';
 import styled, { css } from 'styled-components';
@@ -20,10 +20,9 @@ const [displaySizeVariations, headingSizeVariations, bodySizeVariations, labelSi
   typography
 ).map(([, sizes]) => getTypographySizeVariations(sizes));
 
-export const Display = styled.h1.attrs((props: any) => ({ as: props?.as || getTag(props, { defaultTag: 'h1' }) }))<
-  TypographyType<typeof typography.display>
->`
-  color: ${colors.n06};
+export const Display = styled.h1.attrs((props: any) => ({
+  as: (props?.as as string) || getTag(props, { defaultTag: 'h1' })
+}))<TypographyType<typeof typography.display>>`
   font-weight: ${fonts.weights.extraBlack};
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -34,7 +33,7 @@ export const Display = styled.h1.attrs((props: any) => ({ as: props?.as || getTa
 `;
 
 export const Heading = styled.h1.attrs((props: any) => ({
-  as: props?.as || getTag(props, { defaultTag: 'h1' })
+  as: (props?.as as string) || getTag(props, { defaultTag: 'h1' })
 }))<TypographyType<typeof typography.heading>>`
   font-weight: ${fonts.weights.extraBold};
   letter-spacing: 0.1em;
@@ -46,17 +45,15 @@ export const Heading = styled.h1.attrs((props: any) => ({
 `;
 
 export const Text = styled.div.attrs((props: any) => ({
-  as: props?.as || getTag(props, { defaultTag: 'div' })
+  as: (props?.as as string) || getTag(props, { defaultTag: 'div' })
 }))<TypographyType<typeof typography.body>>`
-  font-family: ${fonts.families.sans};
-
   ${variations(bodySizeVariations)};
   ${variations(miscVariations)};
   ${generateProps};
 `;
 
 export const Label = styled.div.attrs((props: any) => ({
-  as: props?.as || getTag(props, { defaultTag: 'span' })
+  as: (props?.as as string) || getTag(props, { defaultTag: 'span' })
 }))<TypographyType<typeof typography.label>>`
   display: inline-block;
   font-weight: ${fonts.weights.extraBlack};

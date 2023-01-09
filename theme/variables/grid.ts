@@ -3,4 +3,4 @@ export const grid = {
   gutter: 1.5,
   margin: 1.5,
   width: 67.5
-};
+} as const;

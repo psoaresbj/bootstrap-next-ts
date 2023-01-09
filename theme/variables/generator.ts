@@ -7,7 +7,8 @@ export const generator = {
   namedProps: [
     { cssProp: 'background-color', list: colors, prefix: 'bg' },
     { cssProp: 'font-weight', list: fonts.weights },
-    { cssProp: 'color', list: colors }
+    { cssProp: 'color', list: colors },
+    { cssProp: 'text-align', list: { center: 'center', left: 'left', right: 'right' } }
   ],
 
   spaceProps: [

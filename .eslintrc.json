@@ -1,5 +1,8 @@
 {
   "extends": ["@psoares/eslint-config", "next/core-web-vitals"],
+  "globals": {
+    "JSX": "readonly"
+ },
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }]
   }
