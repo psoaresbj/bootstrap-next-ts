@@ -1,34 +1,51 @@
 # My NextJS bootstrap
 
 ## Features
-### Common
+
+### Components
 - [ ] Cookies consent
 - [ ] GA implementation
 - [ ] SEO component
 - [ ] Robots implementation
+- [ ] Modal component
+- [x] Str
+- [x] Header (as example and Prismic data consumer)
 
 ### CMS
-- [ ] Serializer and Parser integration
-- [ ] Slicemachine integration
-- [ ] Preview integration
-- [ ] Multilang integration
-- [ ] Prismic Base Integration
+- Api
+  - [x] `getConfig` function as example
+- Data provider
+  - [x] `useConfig` hook
+  - [x] `usePage` hook
+  - [x] `useTranslations` hook
+- Utils
+  - [x] bracked
+  - [x] extractFromData
+  - [x] parse
+  - [x] sentenceCase
+- [x] RichText & Serializer
+- [x] Slicemachine integration
+- [x] Preview integration
+- [x] Multilang integration
+- [x] Prismic Base Integration
+
 
 ### Theme
-- [x] Style-guide page
+- Style-guide page
   - [x] Typography
   - [x] Colors
   - [x] Icons
-- [ ] Modal component
-- [x] Grid components
+- [x] Rich text content
+- Grid components
   - [x] `Grid`
   - [x] `Row`
   - [x] `Col`
 - [x] List component
 - [x] Typography components
 - [x] Icon component
-- [x] Base layout components
+- Base layout components
   - [x] `Div`
+  - [x] `Main`
   - [x] `Section`
 - [x] Global style
 - [x] Generator config

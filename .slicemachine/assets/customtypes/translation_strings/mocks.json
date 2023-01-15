@@ -1,0 +1,12 @@
+{
+  "scroll": {
+    "__TYPE__": "FieldContent",
+    "value": "meant",
+    "type": "Text"
+  },
+  "swipe": {
+    "__TYPE__": "FieldContent",
+    "value": "solve",
+    "type": "Text"
+  }
+}

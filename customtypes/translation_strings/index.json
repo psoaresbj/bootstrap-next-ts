@@ -1,0 +1,24 @@
+{
+  "id": "translation_strings",
+  "label": "Translation Strings",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "scroll": {
+        "type": "Text",
+        "config": {
+          "label": "Scroll",
+          "placeholder": ""
+        }
+      },
+      "swipe": {
+        "type": "Text",
+        "config": {
+          "label": "Swipe",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

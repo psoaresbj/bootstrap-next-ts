@@ -1,7 +1,7 @@
 export const colors = {
   // Brand
-  b06: '#FF7E36',
-  b07: '#FF5C00',
+  b05: '#FF7E36',
+  b06: '#FF5C00',
 
   // Neutral
   n01: '#FFFFFF',

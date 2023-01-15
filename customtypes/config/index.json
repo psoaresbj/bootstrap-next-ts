@@ -1,0 +1,155 @@
+{
+  "id": "config",
+  "label": "Config",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "SEO": {
+      "seo_title": {
+        "type": "Text",
+        "config": {
+          "label": "SEO Title",
+          "placeholder": ""
+        }
+      },
+      "seo_description": {
+        "type": "Text",
+        "config": {
+          "label": "Seo Description",
+          "placeholder": ""
+        }
+      },
+      "seo_keywords": {
+        "type": "Text",
+        "config": {
+          "label": "Seo Keywords",
+          "placeholder": ""
+        }
+      },
+      "seo_image": {
+        "type": "Image",
+        "config": {
+          "label": "Seo Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    },
+    "Menus": {
+      "header_main_menu": {
+        "type": "Group",
+        "config": {
+          "label": "Header Main Menu",
+          "fields": {
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": ""
+              }
+            },
+            "url": {
+              "type": "Text",
+              "config": {
+                "label": "Url",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "header_secondary_menu": {
+        "type": "Group",
+        "config": {
+          "label": "Header Secondary Menu",
+          "fields": {
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": ""
+              }
+            },
+            "url": {
+              "type": "Text",
+              "config": {
+                "label": "Url",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "Social": {
+      "social": {
+        "type": "Group",
+        "config": {
+          "label": "Social",
+          "fields": {
+            "network": {
+              "type": "Text",
+              "config": {
+                "label": "Network",
+                "placeholder": ""
+              }
+            },
+            "url": {
+              "type": "Text",
+              "config": {
+                "label": "Url",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "Footer": {
+      "footer_main_menu": {
+        "type": "Group",
+        "config": {
+          "label": "Footer Main Menu",
+          "fields": {
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": ""
+              }
+            },
+            "url": {
+              "type": "Text",
+              "config": {
+                "label": "Url",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "footer_secondary_menu": {
+        "type": "Group",
+        "config": {
+          "label": "Footer Secondary Menu",
+          "fields": {
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": ""
+              }
+            },
+            "url": {
+              "type": "Text",
+              "config": {
+                "label": "Url",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

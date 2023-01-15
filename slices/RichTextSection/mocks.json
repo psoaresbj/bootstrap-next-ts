@@ -1,0 +1,40 @@
+[
+  {
+    "__TYPE__": "SharedSliceContent",
+    "variation": "default",
+    "primary": {
+      "spacing": {
+        "__TYPE__": "FieldContent",
+        "value": "default",
+        "type": "Select"
+      },
+      "colSize": {
+        "__TYPE__": "FieldContent",
+        "value": "8",
+        "type": "Number"
+      },
+      "heading": {
+        "__TYPE__": "FieldContent",
+        "value": "path",
+        "type": "Text"
+      },
+      "text": {
+        "__TYPE__": "StructuredTextContent",
+        "value": [
+          {
+            "type": "paragraph",
+            "content": {
+              "text": "Sunt ut dolor sit sunt sit et consectetur commodo."
+            }
+          }
+        ]
+      }
+    },
+    "items": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": []
+      }
+    ]
+  }
+]
