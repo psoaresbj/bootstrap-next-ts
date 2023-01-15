@@ -2,14 +2,20 @@
 
 ## Features
 
+
 ### Components
-- [ ] Cookies consent
-- [ ] GA implementation
-- [ ] SEO component
 - [ ] Robots implementation
+- Cookies
+  - [ ] Flyout component
+  - [ ] GA implementation
+- [ ] SEO component
 - [ ] Modal component
 - [x] Str
 - [x] Header (as example and Prismic data consumer)
+
+### Generic
+- [ ] Robots support
+- [ ] Sitemap support
 
 ### CMS
 - Api
