@@ -1,5 +1,12 @@
 # My NextJS bootstrap
 
+## Project features
+  - NextJS
+  - Prismic integration
+  - Styled-components
+  - Styled-utils
+  - Typescript
+
 ## Config checklist
 
 <ol>
@@ -74,7 +81,7 @@ yarn dev
 </li>
 </ol>
 
-## Features list
+## Detailed content list
 <ul>
 <li> <details><summary>Components</summary><blockquote>
 
