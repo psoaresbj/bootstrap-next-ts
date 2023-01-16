@@ -5,9 +5,10 @@ import { predicate } from '@prismicio/client';
 // eslint-disable-next-line no-unused-vars
 type GetConfig = (options: { locale?: string; previewData: PreviewData }) => Promise<any>;
 
-const accessToken = process.env.NEXT_PRISMIC_TOKEN;
-
+// EDIT: set your unique config files
 const configDocumentTypes = ['config', 'translation_strings'];
+
+const accessToken = process.env.NEXT_PRISMIC_TOKEN;
 
 export const getConfig: GetConfig = async ({ locale, previewData }) => {
   try {

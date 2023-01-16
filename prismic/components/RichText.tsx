@@ -44,6 +44,7 @@ type SerializerArguments = {
   };
 };
 
+// EDIT: Set serializer according designs
 const serializer = (args: SerializerArguments) => {
   const { children, components: componentsFromProps, forwardProps: serializerProps, key, node, type, variables } = args;
   const components = { ...baseComponents, ...componentsFromProps };

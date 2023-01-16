@@ -11,6 +11,12 @@ export const getStaticProps: GetStaticProps<{}, { uid: string }> = async ({ loca
   const config = await getConfig({ locale, previewData });
   const page = await client.getByUID('page', uid, { lang: locale });
 
+  if (!page?.id) {
+    return {
+      notFound: true
+    };
+  }
+
   return {
     props: {
       config,

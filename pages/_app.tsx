@@ -12,6 +12,10 @@ const App = (props: AppProps) => {
   const { Component, pageProps } = props;
   const { config, page, ...forwardProps } = pageProps || {};
 
+  if (!page && !config) {
+    return <Component {...pageProps} />;
+  }
+
   return (
     <DataProvider config={{ ...config, ...forwardProps }} page={page}>
       <main className={gilroy.className}>

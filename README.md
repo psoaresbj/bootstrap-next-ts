@@ -1,21 +1,38 @@
 # My NextJS bootstrap
 
-## Features
+## Features list
 
+<details><summary>CMS</summary>
+  - Api
+    - [x] `getConfig` function as example
+  - Data provider
+    - [x] `useConfig` hook
+    - [x] `usePage` hook
+    - [x] `useTranslations` hook
+  - Utils
+    - [x] bracked
+    - [x] extractFromData
+    - [x] parse
+    - [x] sentenceCase
+  - [x] RichText & Serializer
+  - [x] Slicemachine integration
+  - [x] Preview integration
+  - [x] Multilang integration
+  - [x] Prismic Base Integration
+</details>
 
 ### Components
-- [ ] Robots implementation
+- [ ] Modal component
 - Cookies
   - [ ] Flyout component
   - [ ] GA implementation
-- [ ] SEO component
-- [ ] Modal component
+- [x] SEO component
 - [x] Str
 - [x] Header (as example and Prismic data consumer)
 
 ### Generic
-- [ ] Robots support
-- [ ] Sitemap support
+- [x] Robots support
+- [x] Sitemap support
 
 ### CMS
 - Api
