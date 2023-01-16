@@ -3,8 +3,8 @@ import Head from 'next/head';
 import React, { useEffect } from 'react';
 import isEmpty from 'lodash/isEmpty';
 import pickBy from 'lodash/pickBy';
-import useConfig from '../hooks/useConfig';
-import usePage from '../hooks/usePage';
+import useConfig from '../prismic/hooks/useConfig';
+import usePage from '../prismic/hooks/usePage';
 
 type MetaImage = string | { url?: string };
 

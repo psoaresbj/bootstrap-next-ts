@@ -4,7 +4,7 @@ import { Main } from '../theme/components/Main';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from '../theme/components/GlobalStyle';
 import Header from '../components/Header';
-import SEO from '../prismic/components/SEO';
+import SEO from '../page-components/SEO';
 import gilroy from '../fonts/gilroy';
 import theme from '../theme';
 
