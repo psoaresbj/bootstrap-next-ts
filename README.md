@@ -1,11 +1,11 @@
 # My NextJS bootstrap
 
 ## Project features
+  - Typescript
   - NextJS
   - Prismic integration
   - Styled-components
-  - Styled-utils
-  - Typescript
+  - @psoares/styled-utils
 
 ## Config checklist
 
@@ -56,7 +56,10 @@ yarn dev
     - [ ] `fonts`
     - [ ] `generator`
     - [ ] `grid`
-  - [ ] Edit typographies `./theme/components/Typography`
+  - [ ] Edit typographies `./theme/components/Typography.tsx`
+  - [ ] Edit global styling `./theme/components/GlobalStyle.tsx`
+  - [ ] Edit html tags style for Prismic parsing in `./theme/components/RichTextContent.tsx`
+  - [ ] Edit Prismic serializer in `./prismic/components/RichText.tsx`
   </details>
 </li>
 <li> <details><summary>Build it</summary>
@@ -76,7 +79,13 @@ yarn dev
 <li> <details><summary>Before publish</summary>
 
   - [ ] Update `./pages/server-sitemap.xml.tsx` to match project requirements
+  - [ ] Create project in Vercel and link it to git repo
   - [ ] Make sure all env vars are updated locally and in Vercel
+  - [ ] Create webhook in Prismic: Settings > Webhooks
+    ```
+    Name: 'VERCEL_UPDATE'
+    URL: Create in Vercel: Settings > Git > Deploy Hooks
+    ```
   </details>
 </li>
 </ol>
