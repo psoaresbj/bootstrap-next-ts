@@ -4,6 +4,9 @@ const defaultLocale = localesConfig.find(({ isDefault }) => isDefault)?.code;
 const locales = localesConfig.map(({ code }) => code);
 
 const nextConfig = {
+  compiler: {
+    styledComponents: true
+  },
   i18n: {
     defaultLocale,
     locales

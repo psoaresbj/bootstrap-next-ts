@@ -1,6 +1,7 @@
 import { AppProps } from 'next/app';
 import { DataProvider } from '../prismic/components/DataProvider';
 import { Main } from '../theme/components/Main';
+import { ModalProvider } from '../modals/ModalProvider';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from '../theme/components/GlobalStyle';
 import Header from '../components/Header';
@@ -18,16 +19,18 @@ const App = (props: AppProps) => {
 
   return (
     <DataProvider config={{ ...config, ...forwardProps }} page={page}>
-      <main className={gilroy.className}>
+      <div className={gilroy.className}>
         <ThemeProvider theme={theme}>
-          <GlobalStyle />
-          <Header />
-          <Main>
-            <SEO />
-            <Component />
-          </Main>
+          <ModalProvider>
+            <GlobalStyle />
+            <Header />
+            <Main>
+              <SEO />
+              <Component />
+            </Main>
+          </ModalProvider>
         </ThemeProvider>
-      </main>
+      </div>
     </DataProvider>
   );
 };

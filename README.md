@@ -64,16 +64,29 @@ yarn dev
 </li>
 <li> <details><summary>Build it</summary>
 
-  - [ ] Add pages main components in `./page-components` and then import them in `./pages`. Use created examples as boilerplate.
-  - [ ] Create layout components according project design in `./components` and then use them in `./pages/_app`
-  - [ ] Go through `./theme/components` and edit / create more.
-    Probably, there's some components that will not need any specific styling like:
-      - `Icon`
-      - `Div`
-      - `Grid`
-      - `List`
-      - `Main`
-  - [ ] Edit slices to match project design in `./slices/[SLICE].js | .jsx | .ts | .tsx`
+  - Pages
+    - [ ] Add pages main components in `./page-components` and then import them in `./pages`. Use created examples as boilerplate.
+
+  - Components
+    - [ ] Create layout components according project design in `./components` and then use them in `./pages/_app`
+
+  - Modals
+    - [ ] Edit generic layout modal style in `./modals/BaseModal.tsx`
+    - [ ] Create content for different modals in `./modals/templates`. Check `./modals/templates/ModalExample.tsx` as example.
+    - [ ] Register all components in `./modals/templates/index.tsx` in order to work.
+    - [ ] use `useModal` to open and pass options and properties to template. View example in `./components/Header.tsx`.
+
+  - Theme Components
+    - [ ] Go through `./theme/components` and edit / create more.
+      Probably, there's some components that will not need any specific styling like:
+        - `Icon`
+        - `Div`
+        - `Grid`
+        - `List`
+        - `Main`
+
+  - Slices
+    - [ ] Edit slices to match project design in `./slices/[SLICE].js | .jsx | .ts | .tsx`
   </details>
 </li>
 <li> <details><summary>Before publish</summary>
@@ -83,7 +96,7 @@ yarn dev
   - [ ] Make sure all env vars are updated locally and in Vercel
   - [ ] Create webhook in Prismic: Settings > Webhooks
     ```
-    Name: 'VERCEL_UPDATE'
+    Name: 'Vercel deploy'
     URL: Create in Vercel: Settings > Git > Deploy Hooks
     ```
   </details>
@@ -94,10 +107,7 @@ yarn dev
 <ul>
 <li> <details><summary>Components</summary><blockquote>
 
-  - [ ] Modal component
-  - Cookies
-    - [ ] Flyout component
-    - [ ] GA implementation
+  - [ ] Flyout component with GA implementation
   - [x] SEO component
   - [x] Str
   - [x] Header (as example and Prismic data consumer)
@@ -108,6 +118,16 @@ yarn dev
 
   - [x] Robots support
   - [x] Sitemap support
+</blockquote></details>
+</li>
+
+<li> <details><summary>Modals</summary><blockquote>
+
+  - [x] `ModalProvider` to register and provide context
+  - [x] `ModalManager` to handle all the generic modal behaviors
+  - [x] `useModal` hook to open, close and access active modal
+  - [x] `BaseModal` as generic layout for all modals
+  - [x] templates/ModalExample as example
 </blockquote></details>
 </li>
 

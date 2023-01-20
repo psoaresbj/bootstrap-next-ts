@@ -5,10 +5,12 @@ import Div from '../theme/components/Div';
 import Icon from '../theme/components/Icon';
 import Link from 'next/link';
 import React, { useCallback } from 'react';
+import TextLink from '../theme/components/TextLink';
 import styled from 'styled-components';
 import useConfig from '../prismic/hooks/useConfig';
+import useModal from '../modals/useModal';
 
-const MenuLink = styled(Link)`
+const MenuLink = styled(TextLink)`
   display: inline-block;
 
   & + & {
@@ -26,8 +28,21 @@ const Header = () => {
   const { mainMenu } = extract<{ mainMenu: MenuItem[] }>('header');
 
   const { pathname } = useRouter();
+  const { open } = useModal();
 
   const isActive = useCallback((url: string) => (url === pathname ? { b06: true } : { n01: true }), [pathname]);
+
+  const handleOpenModal = () =>
+    open('example', {
+      options: {
+        onClose: (from?: string) => console.log(`Closed ${from || 'using backdrop click or any other source...'}`),
+        onOpen: () => console.log('Modal opened!')
+      },
+
+      props: {
+        heading: 'Example modal!'
+      }
+    });
 
   return (
     <Div as="header" bgN07 pb={1} pt={1.5}>
@@ -50,6 +65,9 @@ const Header = () => {
                   </MenuLink>
                 )
             )}
+            <MenuLink onClick={handleOpenModal}>
+              <Label n01>Open modal</Label>
+            </MenuLink>
           </Col>
         </Row>
       </Grid>
