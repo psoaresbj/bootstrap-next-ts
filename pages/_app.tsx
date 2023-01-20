@@ -3,6 +3,7 @@ import { DataProvider } from '../prismic/components/DataProvider';
 import { Main } from '../theme/components/Main';
 import { ModalProvider } from '../modals/ModalProvider';
 import { ThemeProvider } from 'styled-components';
+import CookieConsent from '../components/CookieConsent';
 import GlobalStyle from '../theme/components/GlobalStyle';
 import Header from '../components/Header';
 import SEO from '../page-components/SEO';
@@ -26,6 +27,7 @@ const App = (props: AppProps) => {
             <Header />
             <Main>
               <SEO />
+              <CookieConsent />
               <Component />
             </Main>
           </ModalProvider>

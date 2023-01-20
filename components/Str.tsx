@@ -1,6 +1,6 @@
 import React from 'react';
-import parse from '../utils/parse';
-import useTranslations from '../hooks/useTranslations';
+import parse from '../prismic/utils/parse';
+import useTranslations from '../prismic/hooks/useTranslations';
 
 type StrProps = {
   children?: any;
