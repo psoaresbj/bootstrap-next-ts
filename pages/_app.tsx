@@ -6,6 +6,7 @@ import { ThemeProvider } from 'styled-components';
 import CookieConsent from '../components/CookieConsent';
 import GlobalStyle from '../theme/components/GlobalStyle';
 import Header from '../components/Header';
+import PageSpinner from '../components/PageSpinner';
 import SEO from '../page-components/SEO';
 import gilroy from '../fonts/gilroy';
 import theme from '../theme';
@@ -24,6 +25,7 @@ const App = (props: AppProps) => {
         <ThemeProvider theme={theme}>
           <ModalProvider>
             <GlobalStyle />
+            <PageSpinner />
             <Header />
             <Main>
               <SEO />

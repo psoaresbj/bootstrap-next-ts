@@ -70,7 +70,7 @@ yarn dev
   - Components
     - [ ] Create layout components according project design in `./components` and then use them in `./pages/_app`
     - [ ] Update the style of the flyout component in `./components/CookieConsent/CookieConsentRequest.tsx`.
-    - [ ] Update the style for the page transitions in `./components/PageTransition/PageSpinner.tsx`.
+    - [ ] Update the style for the page spinner in `./components/PageSpinner.tsx`.
 
   - Modals
     - [ ] Edit generic layout modal style in `./modals/BaseModal.tsx`
@@ -109,7 +109,7 @@ yarn dev
 <ul>
 <li> <details><summary>Components</summary><blockquote>
 
-  - [ ] PageTransition
+  - [x] PageSpinner
   - CookieConsent
     - [x] `useCookieConsent` hook
     - [x] `CookieConsent` wrapper component
