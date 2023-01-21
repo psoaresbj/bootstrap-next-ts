@@ -1,7 +1,7 @@
 import CookieConsentRequest from './CookieConsentRequest';
 import React from 'react';
 import Script from 'next/script';
-import useCookieConsent from '../../hooks/useCookieConsent';
+import useCookieConsent from './useCookieConsent';
 
 const gaKey = process.env.NEXT_PUBLIC_GA;
 
