@@ -124,6 +124,9 @@ yarn dev
 
   - [x] Robots support
   - [x] Sitemap support
+  - [x] `useClickOutside` hook
+  - [x] `useOnScroll` hook
+  - [x] `useOnWindowResize` hook
 </blockquote></details>
 </li>
 
