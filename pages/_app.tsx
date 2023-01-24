@@ -7,7 +7,7 @@ import CookieConsent from '../components/CookieConsent';
 import GlobalStyle from '../theme/components/GlobalStyle';
 import Header from '../components/Header';
 import PageSpinner from '../components/PageSpinner';
-import SEO from '../page-components/SEO';
+import SEO from '../components/SEO';
 import gilroy from '../fonts/gilroy';
 import theme from '../theme';
 
