@@ -2,10 +2,10 @@ import keysToCamel from './keysToCamel';
 
 const extractFromData = (obj: any, partial: string, snakeCase?: boolean) => {
   try {
-    const data = snakeCase ? obj : { ...keysToCamel(obj) };
+    const data = !snakeCase ? obj : { ...keysToCamel(obj) };
 
     return Object.keys(data).reduce((result, key) => {
-      const [, splitKey] = key.split(snakeCase ? `${partial}_` : partial);
+      const [, splitKey] = key.split(!snakeCase ? `${partial}_` : partial);
 
       return splitKey
         ? { ...result, [snakeCase ? splitKey : `${splitKey.charAt(0).toLowerCase()}${splitKey.slice(1)}`]: data[key] }
