@@ -25,7 +25,7 @@ type MenuItem = {
 
 const Header = () => {
   const { extract } = useConfig();
-  const { mainMenu } = extract<{ mainMenu: MenuItem[] }>('header');
+  const { mainMenu } = extract<{ mainMenu: MenuItem[] }>('header', true);
 
   const { pathname } = useRouter();
   const { open } = useModal();

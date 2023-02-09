@@ -13,8 +13,8 @@ const usePage = ({ list } = { list: false }) => {
     console.log('%c \nPage data\n', 'color: #007AF4;', page);
   }
 
-  const extract = <T extends { [key: string]: any } | undefined>(name: string, snakeCase?: boolean): T =>
-    extractFromData(page?.data || {}, name, snakeCase) as T;
+  const extract = <T extends { [key: string]: any } | undefined>(name: string, camelCase?: boolean): T =>
+    extractFromData(page?.data || {}, name, camelCase) as T;
 
   return { ...(page as PrismicDocument), extract };
 };

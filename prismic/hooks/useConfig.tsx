@@ -21,8 +21,8 @@ const useConfig = ({ list } = { list: false }) => {
     console.log('%c \nConfig data\n', 'color: #00F496;', config);
   }
 
-  const extract = <T extends { [key: string]: any } | undefined>(name: string, snakeCase?: boolean): T =>
-    extractFromData(config || {}, name, snakeCase) as T;
+  const extract = <T extends { [key: string]: any } | undefined>(name: string, camelCase?: boolean): T =>
+    extractFromData(config || {}, name, camelCase) as T;
 
   return { ...(config as { [key: string]: any }), extract, url };
 };

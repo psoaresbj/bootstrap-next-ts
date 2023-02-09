@@ -81,8 +81,8 @@ const SEO = (props: SEOProps) => {
 
   const { locale } = router;
 
-  const metaFromConfig = pickBy(extractFromConfig('seo'), prop => !isEmpty(prop));
-  const metaFromPage = pickBy(extractFromPage('seo'), prop => !isEmpty(prop));
+  const metaFromConfig = pickBy(extractFromConfig('seo', true), prop => !isEmpty(prop));
+  const metaFromPage = pickBy(extractFromPage('seo', true), prop => !isEmpty(prop));
   const metaFromProps = pickBy(meta, prop => !isEmpty(prop));
 
   const mergedMeta = { ...metaFromConfig, ...metaFromPage, ...metaFromProps, url } as Meta;
