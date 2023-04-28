@@ -1,0 +1,170 @@
+[
+  {
+    "seo_title": {
+      "__TYPE__": "FieldContent",
+      "value": "ate",
+      "type": "Text"
+    },
+    "seo_description": {
+      "__TYPE__": "FieldContent",
+      "value": "division",
+      "type": "Text"
+    },
+    "seo_keywords": {
+      "__TYPE__": "FieldContent",
+      "value": "mission",
+      "type": "Text"
+    },
+    "seo_image": {
+      "__TYPE__": "ImageContent",
+      "origin": {
+        "id": "main",
+        "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+        "width": 5616,
+        "height": 3744
+      },
+      "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+      "width": 5616,
+      "height": 3744,
+      "edit": {
+        "zoom": 1,
+        "crop": {
+          "x": 0,
+          "y": 0
+        },
+        "background": "transparent"
+      },
+      "thumbnails": {}
+    },
+    "header_main_menu": {
+      "__TYPE__": "GroupContentType",
+      "value": [
+        {
+          "__TYPE__": "GroupItemContent",
+          "value": [
+            [
+              "label",
+              {
+                "__TYPE__": "FieldContent",
+                "value": "average",
+                "type": "Text"
+              }
+            ],
+            [
+              "url",
+              {
+                "__TYPE__": "FieldContent",
+                "value": "between",
+                "type": "Text"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    "header_secondary_menu": {
+      "__TYPE__": "GroupContentType",
+      "value": [
+        {
+          "__TYPE__": "GroupItemContent",
+          "value": [
+            [
+              "label",
+              {
+                "__TYPE__": "FieldContent",
+                "value": "sand",
+                "type": "Text"
+              }
+            ],
+            [
+              "url",
+              {
+                "__TYPE__": "FieldContent",
+                "value": "gate",
+                "type": "Text"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    "social": {
+      "__TYPE__": "GroupContentType",
+      "value": [
+        {
+          "__TYPE__": "GroupItemContent",
+          "value": [
+            [
+              "network",
+              {
+                "__TYPE__": "FieldContent",
+                "value": "brass",
+                "type": "Text"
+              }
+            ],
+            [
+              "url",
+              {
+                "__TYPE__": "FieldContent",
+                "value": "property",
+                "type": "Text"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    "footer_main_menu": {
+      "__TYPE__": "GroupContentType",
+      "value": [
+        {
+          "__TYPE__": "GroupItemContent",
+          "value": [
+            [
+              "label",
+              {
+                "__TYPE__": "FieldContent",
+                "value": "out",
+                "type": "Text"
+              }
+            ],
+            [
+              "url",
+              {
+                "__TYPE__": "FieldContent",
+                "value": "average",
+                "type": "Text"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    "footer_secondary_menu": {
+      "__TYPE__": "GroupContentType",
+      "value": [
+        {
+          "__TYPE__": "GroupItemContent",
+          "value": [
+            [
+              "label",
+              {
+                "__TYPE__": "FieldContent",
+                "value": "stove",
+                "type": "Text"
+              }
+            ],
+            [
+              "url",
+              {
+                "__TYPE__": "FieldContent",
+                "value": "division",
+                "type": "Text"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,5 +1,5 @@
 import { Col, Grid, Row } from '../../theme/components/Grid';
-import { Display, Text } from '../../theme/components/Typography';
+import { Heading, Text } from '../../theme/components/Typography';
 
 import type { SliceComponentProps } from '@prismicio/react';
 
@@ -20,7 +20,7 @@ const RichTextSection = (props: RichTextSectionProps) => {
       <Grid>
         <Row>
           <Col colSize={{ ...(!!colSize ? { md: colSize } : {}), xs: 12 }}>
-            {!!heading && <Display>{heading}</Display>}
+            {!!heading && <Heading>{heading}</Heading>}
             {!!text?.length && (
               <Text mt={{ md: 4, xs: 2 }}>
                 <RichText content={text} />

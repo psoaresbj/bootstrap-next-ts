@@ -1,0 +1,14 @@
+[
+  {
+    "scroll": {
+      "__TYPE__": "FieldContent",
+      "value": "rush",
+      "type": "Text"
+    },
+    "swipe": {
+      "__TYPE__": "FieldContent",
+      "value": "essential",
+      "type": "Text"
+    }
+  }
+]

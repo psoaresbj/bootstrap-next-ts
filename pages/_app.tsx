@@ -8,7 +8,7 @@ import GlobalStyle from '../theme/components/GlobalStyle';
 import Header from '../components/Header';
 import PageSpinner from '../components/PageSpinner';
 import SEO from '../components/SEO';
-import gilroy from '../fonts/gilroy';
+import figtree from '../fonts/figtree';
 import theme from '../theme';
 
 const App = (props: AppProps) => {
@@ -21,7 +21,7 @@ const App = (props: AppProps) => {
 
   return (
     <DataProvider config={{ ...config, ...forwardProps }} page={page}>
-      <div className={gilroy.className}>
+      <div className={figtree.className}>
         <ThemeProvider theme={theme}>
           <ModalProvider>
             <GlobalStyle />

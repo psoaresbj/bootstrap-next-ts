@@ -16,27 +16,14 @@ const miscVariations = {
 
 type TypographyType<T extends Variations> = GeneratedProps & VariationProps<typeof miscVariations> & VariationProps<T>;
 
-const [displaySizeVariations, headingSizeVariations, bodySizeVariations, labelSizeVariations] = Object.entries(
-  typography
-).map(([, sizes]) => getTypographySizeVariations(sizes));
-
-export const Display = styled.h1.attrs((props: any) => ({
-  as: (props?.as as string) || getTag(props, { defaultTag: 'h1' })
-}))<TypographyType<typeof typography.display>>`
-  font-weight: ${fonts.weights.extraBlack};
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  ${variations(displaySizeVariations)};
-  ${variations(miscVariations)};
-  ${generateProps};
-`;
+const [headingSizeVariations, bodySizeVariations, labelSizeVariations] = Object.entries(typography).map(([, sizes]) =>
+  getTypographySizeVariations(sizes)
+);
 
 export const Heading = styled.h1.attrs((props: any) => ({
   as: (props?.as as string) || getTag(props, { defaultTag: 'h1' })
 }))<TypographyType<typeof typography.heading>>`
-  font-weight: ${fonts.weights.extraBold};
-  letter-spacing: 0.1em;
+  font-weight: ${fonts.weights.black};
   text-transform: uppercase;
 
   ${variations(headingSizeVariations)};
@@ -56,7 +43,7 @@ export const Label = styled.div.attrs((props: any) => ({
   as: (props?.as as string) || getTag(props, { defaultTag: 'span' })
 }))<TypographyType<typeof typography.label>>`
   display: inline-block;
-  font-weight: ${fonts.weights.extraBlack};
+  font-weight: ${fonts.weights.black};
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
