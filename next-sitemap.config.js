@@ -1,3 +1,5 @@
+/** @type {import('next-sitemap').IConfig} */
+
 module.exports = {
   exclude: ['/admin', '/server-sitemap.xml'],
   generateRobotsTxt: true,

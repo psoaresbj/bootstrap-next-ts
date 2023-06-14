@@ -5,7 +5,7 @@
   - NextJS
   - Prismic integration
   - Styled-components
-  - @psoares/styled-utils
+  - styled-gen
 
 ## Config checklist
 
